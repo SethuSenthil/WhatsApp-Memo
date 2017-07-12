@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head> <!--In the header (<head>) elements that aren't showed on the website are incerted such as imports,favicon ect.-->
+ <title>What Is Whatsapp Memo?</title>
+ <link rel="shortcut icon" type="image/icns" href="Media/favicon.icns"/><!--The favicon (icon of the website showed in the tab navigation bar)-->
+ <meta name="theme-color" content="#128C7E"/><!--The color you want to be displayed in the nav bar of android devices-->
+ <meta name="apple-mobile-web-app-capable" content="yes"><!--Makes it full screen compatable on IOS devices-->
+ <script src="function.js"></script><!--Adds/Links JS (Java Script) doc to HTML-->
+ <meta name="viewport" content="width=device-width, initial-scale=1"><!--Make and tell the broswer that our website is mobile friendly-->
+ <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--Import for Roboto font you can mention it in CSS like this font-family: 'Roboto', sans-serif;-->
+<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'> <!--Import for Google Product Sans fonr, you can mention it in css like font-family: 'Product Sans', Arial, sans-serif; -->
+<script src="https://use.fontawesome.com/c465270986.js"></script> <!--Import Font Awesome Icon Font-->
+<link rel="stylesheet" href="styles.css"><!--Import CSS-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+</head>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">WhatsApp Memo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">What Is WPM <span class="sr-only">(current)</span></a></li>
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<body><!--Everything you want to be shown on the website (besides footer)-->
+<style>
+input[type='text']{
+
+    color: #075E54;
+    width: 280px;
+    height: 38px;
+    margin-left: -150px;
+    margin-top: -19px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Product Sans', Arial, sans-serif;
+    transition: box-shadow 320ms;
+
+    box-shadow: 0px 0px 8px 10px rgba(0,0,0,0.1);
+
+    border-radius: 3px;
+    font-size: 18px;
+    border: 0px;
+}
+
+input[type='text']:focus {
+
+    outline: 0px;
+    outline-offset: 0px;
+    box-shadow: 0px 0px 1px 5px rgba(0,0,0,0.12);
+}
+
+input:-moz-placeholder {
+    color: #cccccc;
+}
+.mainb { /*Button Style*/
+  background-color: #128C7E; /* Green */
+      border: none;
+      color: white;
+      font-family: 'Product Sans', Arial, sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      width: 280px;
+      height: 60px;
+      border-radius: 20px;
+      margin-left: -150px;
+      margin-top: -19px;
+      position: fixed;
+      left: 50%;
+      top: 65%;
+}
+.mainb:hover { /*After Hover effects*/
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #075E54;
+    border-radius: 40px;
+    width: 290px
+
+}
+.mainb:active{
+    background:#25D366
+;
+    color:black;
+    content:"copied:";
+    border-radius: 15px;
+}
+.mainb{
+  outline:0;
+}
+  .affix {
+    position: fixed;
+    top: 0;
+}
+/* Changing highlight color of website */
+::selection {
+  background: #25D366; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #25D366; /* Gecko Browsers */
+}
+.navbar-default {
+  background-color: #1fbea5;
+  border-color: #128c7e;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #075e54;
+}
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #075e54;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #1fbea5;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #075e54;
+  background-color: #128c7e;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+  background-color: #128c7e;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #075e54;
+  background-color: #128c7e;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #075e54;
+  background-color: #128c7e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #075e54;
+  background-color: #128c7e;
+}
+.navbar-default .navbar-toggle {
+  border-color: #128c7e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #128c7e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #075e54;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #075e54;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #075e54;
+    background-color: #128c7e;
+  }
+}
+.navbar {
+  border: 0;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-size: 20px;
+  height: 55px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.navbar-brand{
+  font-size: 30px;
+}
+
+h1{
+font-family: 'Roboto', sans-serif;
+}
+p{
+  margin-left: 3em;
+  margin-right: 3em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+}
+h2{
+  margin-left: 1.26em;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+h2:hover{
+  font-size:40px;
+  color: #25D366;
+}
+h2:active{
+  color:#075E54;
+}
+h2:hover::selection{
+  color:white;
+}
+.fa-github:hover{
+  color: #333333;
+}
+.fa-github:active{
+  color: white;
+}
+.fa-stack-overflow:hover{
+  color:#f48024;
+}
+.fa-stack-overflow:active{
+  color:#bcbbbb;
+}
+.fa-codepen:hover{
+  color: black;
+}
+.fa-codepen:active{
+  color: white;
+}
+.fa-instagram:hover{
+  color:#c13584;
+}
+.fa-instagram:active{
+  color:#833ab4;
+}
+.fa-twitter:hover{
+  color: #1da1f2;
+}
+.fa-twitter:active{
+  color: #657786;
+}
+</style>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+<br>
+<h2> What is Whatsapp Memo?</h2>
+<p> Whatsapp Memo is a program that genrates a link which allows you to unlock a incridible feature. This feature allows the user to text themselves in whatsapp , without creating a group with only one user. Instead Whatsapp Memo does this in a more stright-forword and elenegt manner whitch actually texts the user and not a group.<p>
+<h2> Ok, What is so spical about texting myself?</h2>
+<p> Whatsapp is one of the most daily used apps in the world, so wouldn't it be more convenient to keep your thoughts, shopping lists, notes and a whole lot more in the same place in one app you always craving to open?</p>
+<center><a href="index.html" class="nostyling"><i class="material-icons backa">arrow_back</i></a></center>
+</body>
+<footer>
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left"> Made with love <i class="fa fa-heart animated infinite pulse red"></i> by <a href="http://bit.ly/FollowSethu">Sethu Senthil</a></p>
+    <a href="http://bit.ly/FollowSethu"class="invisibleo"><i class="fa fa-twitter navbar-text pull-right" aria-hidden="true"></a></i>
+    <a href="http://bit.ly/SethuInstagram"class="invisibleo"><i class="fa fa-instagram navbar-text pull-right" aria-hidden="true"></i></a></a>
+    <a href="http://bit.ly/CodePenSethu"class="invisibleo"><i class="fa fa-codepen navbar-text pull-right"aria-hidden="true"></i></a>
+    <a href="http://bit.ly/SethuStackOverflow"class="invisibleo"><i class="fa fa-stack-overflow navbar-text pull-right" aria-hidden="true"></i></a>
+    <a href="http://bit.ly/SethuGitHub"class="invisibleo"><i class="fa fa-github navbar-text pull-right" aria-hidden="true"> </i></a>
+  </div>
+  </div>
+</div>
+</footer>
+
+</html>
