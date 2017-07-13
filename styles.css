@@ -88,7 +88,7 @@ input:-moz-placeholder {
 .navbar-default {
   background-color: #1fbea5;
   border-color: #128c7e;
-  
+
 }
 .navbar-default .navbar-brand {
   color: #ecf0f1;
@@ -281,4 +281,9 @@ color: white;
 transform: translate3d(0, 0, 0);
 backface-visibility: hidden;
 perspective: 1000px;
+}
+.four{
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-size: 200px;
+  text-align: center;
 }
