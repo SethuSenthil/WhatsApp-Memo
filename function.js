@@ -116,3 +116,8 @@ Affix.prototype.checkPosition = function () {
 
  this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ''))
 }
+function fourerror() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
