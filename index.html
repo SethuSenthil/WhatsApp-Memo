@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html amp lang="en">
 <head> <!--In the header (<head>) elements that aren't showed on the website are incerted such as imports,favicon ect.-->
+ <meta charset="utf-8">
  <title>Whatsapp Memo</title>
  <meta name="keywords" content="Whatsapp, Whatsapphacks, Whatsapp Hacks, Whatsapp Memo, Memo, memo, whatsapp memo, WhatsApp Memo, Whatsapp life hacks, How to text yourself on whatsapp?, whatsapp github,"><!--Keywords that will pull up your page on search engines-->
  <meta name="description" content="Whatsapp is one of the most daily used apps in the world, so wouldn't it be more convenient to keep your thoughts, shopping lists, notes and a whole lot more in the same place in one app you always craving to open?"/><!--description for website that usually comes underneath a result in a browser-->
@@ -16,14 +17,16 @@
  <meta name=”twitter:title” content="WhatsApp Memo"><!--post title for facebook-->
  <meta name=”twitter:image” content="https://raw.githubusercontent.com/SethuSenthil/WhatsApp-Memo/master/Media/Main.jpg">
  <meta name="theme-color" content="#128C7E"/><!--The color you want to be displayed in the nav bar of android devices-->
+ <link rel="canonical" href="https://sethusenthil.github.io/WhatsApp-Memo/index.html" />
  <meta name="apple-mobile-web-app-capable" content="yes"><!--Makes it full screen compatable on IOS devices-->
  <script src="function.js"></script><!--Adds/Links JS (Java Script) doc to HTML-->
- <meta name="viewport" content="width=device-width, initial-scale=1"><!--Make and tell the broswer that our website is mobile friendly-->
+ <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Import Google Icon Font-->
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!--Import for Roboto font you can mention it in CSS like this font-family: 'Roboto', sans-serif;-->
 <link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'> <!--Import for Google Product Sans fonr, you can mention it in css like font-family: 'Product Sans', Arial, sans-serif; -->
 <script src="https://use.fontawesome.com/c465270986.js"></script> <!--Import Font Awesome Icon Font-->
 <link rel="stylesheet" href="styles.css"><!--Import CSS-->
+<script async src="https://cdn.ampproject.org/v0.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -43,7 +46,18 @@
   ga('send', 'pageview');
 
 </script>
-
+<script type="application/ld+json">
+      {
+        "@context": "https://sethusenthil.github.io/WhatsApp-Memo/",
+        "@type": "website",
+        "headline": "WhatsApp Memo - Enable the full potential of WhatsApp",
+        "datePublished": "2017-6-12T=5:02:41Z",
+        "image": [
+          "Media/favicon.icns"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -232,7 +246,7 @@ $(document).ready(function(){
 <input type='text' id='getnum' placeholder='Type your phone number' onkeypress="return javascript: window.open('whatsapp://send?text=Unlocked&phone=+' + document.getElementById('getnum').value);">
 <button id="test" class="mainb animated pulse" onClick="javascript: window.open('whatsapp://send?text=Unlocked&phone=+' + document.getElementById('getnum').value);" target="_blank">Click To Unlock <i class="material-icons">lock_open</i></button>
 </body>
-
+<amp-img src="Media/favicon.icns" alt="Welcome" height="0" width="0"></amp-img>
 <footer>
 <div class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
