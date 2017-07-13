@@ -90,7 +90,7 @@ input:-moz-placeholder {
   border-color: #128c7e;
 
 }
-.navbar-default .navbar-brand {
+.navbar-default .bar-brand {
   color: #ecf0f1;
 }
 .navbar-default .navbar-brand:hover,
@@ -335,4 +335,9 @@ perspective: 1000px;
 @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+.green-tooltip + .tooltip > .tooltip-inner {background-color: #128c7e;}
+.green-tooltip + .tooltip > .tooltip-arrow { border-bottom-color:#128c7e; }
+.tooltip{
+  font-family: 'Product Sans', Arial, sans-serif;
 }
