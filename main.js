@@ -1,3 +1,22 @@
+function entervalue() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+// Core Whatsapp function
+function wpmagic(){
+  if(document.getElementById('form1').value != "")
+  {
+  }
+  window.open('whatsapp://send?text=Unlocked&phone=+' + document.getElementById('getnum').value);
+  entervalue();
+}
+   //Run function on enter
+$("#form1").keyup(function(event){
+    if(event.keyCode == 13){
+        $("#tb1").click();
+    }
+});
 // JS code for the textbox
 function getnum( element ) {
 
