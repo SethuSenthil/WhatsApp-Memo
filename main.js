@@ -80,7 +80,7 @@ function validate() {
   }
 });
 }
-getnum( document.getElementById( 'getnum' ) );
+( document.getElementById( 'form1' ) );
 var Affix = function (element, options) {
  this.options = $.extend({}, $.fn.affix.defaults, options)
  this.$window = $(window).on('scroll.affix.data-api', $.proxy(this.checkPosition, this))
@@ -121,3 +121,24 @@ function fourerror() {
     x.className = "show";
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+
+function WhatsappCore(){
+  if(document.getElementById('form1').value != "")
+  {
+
+  }
+
+
+  window.open('whatsapp://send?text=Unlocked&phone=' + document.getElementById('form1').value);
+  fourerror();
+}
+
+
+document.getElementById("form1")
+    document.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("tb1").click();
+    }
+});
+new WOW().init();

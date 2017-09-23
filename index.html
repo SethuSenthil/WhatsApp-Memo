@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp lang="en">
+<html lang="en">
 <head>
  <meta charset="utf-8">
  <title>Whatsapp Memo</title>
@@ -20,7 +20,7 @@
  <link rel="canonical" href="https://sethusenthil.github.io/WhatsApp-Memo/index.html" />
  <meta http-equiv="Cache-control" content="public">
  <meta name="apple-mobile-web-app-capable" content="yes">
- <script src="function.js"></script>
+ <script src="main.js"></script>
  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -30,10 +30,10 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
- <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
- <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -88,18 +88,12 @@
   <div class="page-header ">
   <center><a href="WhatIsMemo.html" data-toggle="tooltip" title="Click here to learn more!" class="memog"><p class="animated tada">What is WhatsApp Memo?</p></a><center>
 </div>
-
-<script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
 <center><div class="alert alert-danger">
-  <strong><i class="material-icons animated infinite jello delays">warning</i></strong> Please enter your country's <a href="FindContryCode.html" data-toggle="tooltip" title="Find your country's area code!" class="green-tooltip"> area code without a space</a> (ex. 1000-000-0000)
-  WE DO NOT KEEP OR STORE YOUR NUMBER!
+  <strong><i class="material-icons animated infinite jello delays">warning</i></strong> Please enter your number in <a href="FindContryCode.html" data-toggle="tooltip" title="Find your country's area code!" class="green-tooltip">international format</a> (ex. 1000-000-0000)
+  <strong>WE DO NOT KEEP OR STORE YOUR NUMBER!</strong>
 </div></center>
-<input type='text' id='getnum' placeholder='Type your phone number' onkeypress="return javascript: window.open('whatsapp://send?text=Unlocked&phone=+' + document.getElementById('getnum').value);">
-<button id="test" class="mainb animated pulse" onClick="javascript: window.open('whatsapp://send?text=Unlocked&phone=+' + document.getElementById('getnum').value); location.href = 'https://sethusenthil.github.io';" target="_blank">Click To Unlock <i class="material-icons">lock_open</i></button>
+<input type='number' id='form1' placeholder='Type your phone number'>
+<button id="tb1" class="mainb animated pulse" onClick="WhatsappCore();">Click To Unlock <i class="material-icons">lock_open</i></button>
 </body>
 <footer>
 <div class="navbar navbar-default navbar-fixed-bottom">
@@ -113,5 +107,7 @@ $(document).ready(function(){
   </div>
   </div>
 </div>
+<!--Scripts-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
 </footer>
 </html>
