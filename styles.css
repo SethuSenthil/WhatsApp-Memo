@@ -407,6 +407,7 @@ transition-duration: .5s;
   color: Black;
 }
 .info h4:hover{
+
   color: #25D366;
 }
 .info > p {
